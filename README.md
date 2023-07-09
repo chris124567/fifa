@@ -4,7 +4,7 @@ Adventures in reverse engineering FIFA iOS app to snipe (automatically buying un
 
 Contains an unofficial FIFA API client in Go.  Able to generate the "digsig" signature to login using the installed system `node` and `./scripts/ds.js`
 
-To make it work now, you may have to update api.appVersion,  api.apiVersion, and ClientVersion in the UtAuthRequest (client.go line 416) to whatever the FIFA companion app currently uses.  You can find that out by logging the requests the app makes in Charles Proxy after setting up TLS interception on your device.  If you want it to solve captchas for you update `captchaApiKey` in main.go to whatever your 2captcha API key.
+To make it work now, you may have to update api.appVersion,  api.apiVersion, and ClientVersion in the UtAuthRequest (client.go line 416) to whatever the FIFA companion app currently uses.  You can find that out by logging the requests the app makes in Charles Proxy after setting up TLS interception on your device.  Also you should copy whatever user-agents your device sends and update fifa.userAgentSynDir and fifa.userAgentWebBrowser.  If you want it to solve captchas for you update `captchaApiKey` in main.go to whatever your 2captcha API key.
 
 # `./cmd/fifa`
 
