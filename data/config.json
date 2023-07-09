@@ -1,0 +1,26 @@
+{
+	"accounts": [
+		{
+			"console": 0,
+			"vendorID": "9DE97B9C-A5D8-4B52-9127-6558E9053F14",
+			"userAlias": "",
+			"personaID": "",
+			"nxMpcidCookie": "",
+			"gaCookie": "",
+			"remID": "",
+			"proxyURL": "http://127.0.0.1:8888"
+		}
+	],
+	"buyAccounts": [
+		0
+	],
+	"watchAccounts": [
+		0
+	],
+	"players": {
+		"190941": {
+			"buyPrice": 2900,
+			"sellPrice": 3400
+		}
+	}
+}
