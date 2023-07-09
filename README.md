@@ -1,10 +1,10 @@
-Adventures in reverse engineering FIFA iOS app to snipe (automatically buy undervalued player then resell) coins from early 2023.  Made 100k coins (~$3) then I lost interest because it would be expensive to scale as accounts cost a lot of money and I had another project to work on.  I do not make all the pinEvents requests that the app does so you may be banned eventually for using this.  Client is headless and does not use Selenium or Puppeteer.
+Adventures in reverse engineering FIFA iOS app to snipe (automatically buying undervalued players on the transfer market then reselling them) coins from early 2023.  Made 100k coins (~$3) then I lost interest because it would be expensive to scale as accounts cost a lot of money and I had another project to work on.  I do not make all the pinEvents requests that the app does so you may be eventually banned for using this.  Client is headless and does not use Selenium or Puppeteer.
 
 # `./fifa`
 
 Contains an unofficial FIFA API client in Go.  Able to generate the "digsig" signature to login using the installed system `node` and `./scripts/ds.js`
 
-To make it work now, you may have to update api.appVersion,  api.apiVersion, and ClientVersion in the UtAuthRequest (client.go line 416) to whatever the FIFA companion app currently uses.  You can find that out by logging the requests the app makes in Charles Proxy after setting up TLS interception on your device.  Also if you want it to solve captchas update `captchaApiKey` to whatever your 2captcha API key.
+To make it work now, you may have to update api.appVersion,  api.apiVersion, and ClientVersion in the UtAuthRequest (client.go line 416) to whatever the FIFA companion app currently uses.  You can find that out by logging the requests the app makes in Charles Proxy after setting up TLS interception on your device.  If you want it to solve captchas for you update `captchaApiKey` in main.go to whatever your 2captcha API key.
 
 # `./cmd/fifa`
 
